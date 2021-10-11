@@ -45,6 +45,22 @@
   </div>
 </template>
 
+<style>
+.description {
+  text-align: justify;
+}
+
+h2 {
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+h3 {
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+</style>
+
 <script>
 import axios from "axios";
 

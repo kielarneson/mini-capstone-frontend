@@ -25,6 +25,7 @@ export default {
       console.log("Show Product", response);
       this.product = response.data;
       this.images = response.data.images;
+      console.log(this.images);
     });
   },
   methods: {},

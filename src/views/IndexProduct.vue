@@ -1,10 +1,11 @@
 <template>
   <div class="index">
     <div v-for="product in products" v-bind:key="product.id">
-      <h1>{{ product.name }}</h1>
-      <img :src="product.primary_image" alt="" />
+      <router-link v-bind:to="`/products/${product.id}`">
+        <h2>{{ product.name }}</h2>
+        <img :src="product.primary_image" alt="" />
+      </router-link>
       <h2>{{ product.price }}</h2>
-      <router-link v-bind:to="`/products/${product.id}`">More Info</router-link>
     </div>
   </div>
 </template>

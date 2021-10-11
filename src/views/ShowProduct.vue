@@ -5,6 +5,7 @@
       <img :src="image.url" alt="" />
     </div>
     <p>{{ product.description }}</p>
+    <h3>{{ product.price }}</h3>
     <router-link to="/products">Return to Products</router-link>
   </div>
 </template>

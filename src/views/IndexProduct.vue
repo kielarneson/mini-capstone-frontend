@@ -5,7 +5,6 @@
         <h2>{{ product.name }}</h2>
         <img :src="product.primary_image" alt="" />
       </router-link>
-      <h2>{{ product.price }}</h2>
     </div>
   </div>
 </template>

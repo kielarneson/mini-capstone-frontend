@@ -4,7 +4,8 @@ import router from "./router";
 
 import axios from "axios";
 
-axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "https://limitless-ravine-12939.herokuapp.com/" : "/";
+axios.defaults.baseURL =
+  process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://limitless-ravine-12939.herokuapp.com";
 
 Vue.config.productionTip = false;
 

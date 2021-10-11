@@ -2,25 +2,52 @@
   <div class="signup">
     <form v-on:submit.prevent="submit()">
       <h1>Signup</h1>
+      <div class="form-floating mb-2">
+        <input
+          type="text"
+          v-model="newUserParams.name"
+          class="form-control"
+          id="floatingInput"
+          placeholder="name@example.com"
+        />
+        <label for="floatingInput">Full Name</label>
+      </div>
+
+      <div class="form-floating mb-2">
+        <input
+          type="email"
+          v-model="newUserParams.email"
+          class="form-control"
+          id="floatingInput"
+          placeholder="name@example.com"
+        />
+        <label for="floatingInput">Email Address</label>
+      </div>
+
+      <div class="form-floating mb-2">
+        <input
+          type="password"
+          v-model="newUserParams.password"
+          class="form-control"
+          id="floatingInput"
+          placeholder="name@example.com"
+        />
+        <label for="floatingInput">Password</label>
+      </div>
+
+      <div class="form-floating mb-2">
+        <input
+          type="password"
+          v-model="newUserParams.password_confirmation"
+          class="form-control"
+          id="floatingInput"
+          placeholder="name@example.com"
+        />
+        <label for="floatingInput">Password Confirmation</label>
+      </div>
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
       </ul>
-      <div>
-        <label>Name:</label>
-        <input type="text" v-model="newUserParams.name" />
-      </div>
-      <div>
-        <label>Email:</label>
-        <input type="email" v-model="newUserParams.email" />
-      </div>
-      <div>
-        <label>Password:</label>
-        <input type="password" v-model="newUserParams.password" />
-      </div>
-      <div>
-        <label>Password confirmation:</label>
-        <input type="password" v-model="newUserParams.password_confirmation" />
-      </div>
       <input type="submit" value="Submit" />
     </form>
   </div>

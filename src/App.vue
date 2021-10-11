@@ -3,7 +3,7 @@
     <div id="nav">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Guitar Center</a>
+          <a class="navbar-brand" href="#">Guitars.gov</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -44,7 +44,7 @@
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

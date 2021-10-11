@@ -2,9 +2,8 @@
   <div class="index">
     <div v-for="product in products" v-bind:key="product.id">
       <h1>{{ product.name }}</h1>
-      <p>{{ product.description }}</p>
-      <p>{{ product.price }}</p>
-      <p>{{ product.supplier.name }}</p>
+      <h2>{{ product.price }}</h2>
+      <router-link v-bind:to="`/products/${product.id}`">More Info</router-link>
     </div>
   </div>
 </template>
